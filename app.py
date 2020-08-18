@@ -35,6 +35,7 @@ local_css("style.css")
 remote_css('https://fonts.googleapis.com/icon?family=Material+Icons')
 
 def main():
+    st.image('https://www.freelogodesign.org/file/app/client/thumb/fa81cab7-f7a6-4a18-afae-320df3277c68_200x200.png')
     st.title("WAREHOUSEIFY")
     menu = ["Home","Signup","Login"]
     submenu = ["Dataset","Prediction"]
@@ -42,7 +43,6 @@ def main():
     
     if choice == "Home":
          st.subheader("Home")
-         st.image('https://3.imimg.com/data3/UK/AH/MY-8266344/fruits-and-vegetables-storage-500x500.jpg')
          st.markdown(f'<div class="markdown-text-container stText" style="width: 698px;"><div style="font-size: medium;">Most products lose their market value (outdate) over time. Some products lose valuefaster than others; these are known as perishable products. Traditionally, perishables outdate due to their chemical structure. Examples of such perishable products are grocery, fresh produce, frozen products, dairy products, delicassens etc. So  This application is used to predict the demands required in a warehouse for a short period of time. So, we aim to analyse the data regarding sales and production and to extract the daily data from warehouse which is used to detect the fluctuations in the sales. The web application uses machine learning algorithms to predict the requirements for production which helps in managing the warehouse. </div>',unsafe_allow_html=True)
          st.text(" ")
     elif choice == "Signup":
